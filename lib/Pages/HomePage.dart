@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:learn_words/Functions/ExtractMp3.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import 'package:animate_do/animate_do.dart';
@@ -74,6 +75,7 @@ class _MyHomePageState extends State<HomePage> {
                 PopupMenuItem<int>(value: 1, child: Text('Уменьшить шрифт')),
                 PopupMenuItem<int>(value: 2, child: Text('Загрузка файла')),
                 PopupMenuItem<int>(value: 3, child: Text('Выбор урока')),
+                PopupMenuItem<int>(value: 4, child: Text('Выбор файла с произношениями')),
               ],
             )
           ],
@@ -249,6 +251,11 @@ class _MyHomePageState extends State<HomePage> {
         Provider.of<Model>(context, listen: false).cancelTimer();
         Navigator.of(context).pop();
         Navigator.push(context, MaterialPageRoute(builder: (context) => SelectLesson()));
+        break;
+      case 4:
+      // Select zip with mp3
+        ExtractMp3 extr = new ExtractMp3(mContext);
+        await extr.selectZipMp3File();
         break;
     }
   }

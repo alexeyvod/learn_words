@@ -1,6 +1,10 @@
 import 'dart:async';
+import 'dart:io';
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:path/path.dart';
 import 'dart:math';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../Functions/DBProvider.dart';
@@ -46,7 +50,13 @@ class Model extends ChangeNotifier {
   Random random = new Random();
   late Timer timer1;
 
+  bool isSpeak = true;
+  late AudioPlayer player;
+  String EnglishWord = '';
+  String RussianWord = '';
+
   Future startProgramm() async {
+    if(isSpeak) player = AudioPlayer();
     prefs = await SharedPreferences.getInstance();
     fontSize = prefs.getDouble('fontSize') ?? 12;
     lotties['ok'] = await AssetLottie('assets/ok.json').load();
@@ -132,16 +142,38 @@ class Model extends ChangeNotifier {
       Primer = Question['English'];
       sAnswers = await DBProvider.db.getAnotherRussian (sLessonId, sRightAnswer, sMaxAnswers - 1);
     }
+    EnglishWord = Question['English'].toString();
+    RussianWord = Question['Russian'].toString();
     sAnswers.add(sRightAnswer);
     sAnswers.shuffle();
     sLessonCaption = Question['LessonCaption'];
     Rating = Question['Rating'];
     isFirstAttempt = true;
     isShow = true;
+    if(EnglishWord != sRightAnswer) Speak(EnglishWord);
     notifyListeners();
   }
 
+  void Speak(String word) async {
+    if(isSpeak){
+      Directory documentsDirectory = await getApplicationDocumentsDirectory();
+      String mp3FileName = join(documentsDirectory.path, 'words_mp3', word.toString().trim().replaceAll("?", "").replaceAll("!", "").replaceAll(" ", "_") + ".mp3");
+      File mp3File =File(mp3FileName);
+      print(mp3FileName);
+      try{
+        if (mp3File.existsSync()){
+          player.play(UrlSource(mp3FileName));
+        }else{
+         print("Error play mp3: Not found ${mp3FileName}");
+        }
+      }catch (e){
+        print("Error play mp3: ${e.toString()}");
+      }
+    }
+  }
+
   getHelp(){
+    Speak(EnglishWord);
     isFirstAttempt = false;
     Help = true;
     notifyListeners();
@@ -149,6 +181,7 @@ class Model extends ChangeNotifier {
 
   answer(String answer) async {
     if(answer == sRightAnswer) {
+      Primer = EnglishWord + " = " + RussianWord;
       int ishRating = Rating;
       if(isFirstAttempt){
         Rating += penaltyValid;
