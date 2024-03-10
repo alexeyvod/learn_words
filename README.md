@@ -1,6 +1,6 @@
-# learn_words
+# Learn Words
 
-Learn English words
+Flutter app for mobile (Android, iOS) for learn english words
 
 ## Getting Started
 
@@ -14,3 +14,5 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+Водопьянов Алексей, 2024
