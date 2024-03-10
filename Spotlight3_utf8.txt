@@ -1,0 +1,440 @@
+﻿Starter unit	
+Again 	Снова
+Begin	Начинать
+Day	День
+Duck	Утка
+Everyone	Каждый
+Little	Маленький
+Love	Любовь
+Nice to see you	Рад тебя видеть 
+Pencil case	Пенал 
+Phone number	Телефонный номер 
+Rainbow	Радуга 
+Think	Думать 
+Today	Сегодня 
+Welcome back!	С возвращением!
+Module 1 Unite 1 School again! Снова в школу!	
+Be late	Опаздывать
+Come 	Приходить
+Get	Получать
+Number	Номер
+Once more	Еще раз
+Pen	Ручка
+Pencil	Карандаш
+plus	Плюс
+Rubber	Стерка
+Ruler	Ручка
+School	Школа
+School bag	Школьная сумка
+Time 	Время
+Unite 2  School subjects Школьные предметы	
+Art	Искусство
+Come on 	Смелее
+Geography 	География
+History	История
+Math 	Математика
+Music	Музыка
+Object	Предмет
+PE	Физ-ра
+Science	Наука
+subject	Школьный предмет
+Year	год
+Module 2 Unite 3 a new member. Новый участник	
+Big brother 	Старший брат
+Family tree	Семейное древо
+Little sister	Младшая сестра
+Of course 	Конечно
+Unite 4 A happy family	
+Baby	Младенец 
+Big	Большой
+Father	Папа  
+Grandfather	Дедушка 
+Grandmother	Бабушка 
+Great	Великолепный, замечательный
+Mother	Мама 
+Small	Маленький 
+tall	Высокий 
+Module 3 Unite 5 He loves Jelly! Он любит желе!	
+Cheese	Сыр 
+Chicken	Курица, цыпленок
+Egg	Яйцо 
+jelly	Желе 
+Lemonade	Лимонад 
+Unite 6 In my lunch box! В моей коробке для ланча!	
+Cake	Торт 
+Carrot	Морковь
+Crunch	Хрустеть 
+Drink	Пить 
+Dry	Сухой 
+Find out	Выяснять, узнавать что то 
+Here you are	Вот, пожалуйста
+Lunch box	Коробка для завтрака
+Munch	Жевать 
+Need	Нуждаться 
+Pasta	Макаронные изделия
+Potato 	Картофель 
+Rice	Рис 
+Sausage	сосиска
+Shopping list 	Список покупок
+Module 4 Unite 7 Toys for little Betsy! Игрушки для маленькой Бетси!	
+Aeroplane	Самолет 
+Elephant	Слон 
+Let me see	дай(те) мне подумать
+Musical box	Музыкальная шкатулка
+Rocking horse	Лошадка-качалка
+Tea set	Чайный сервиз
+Train	Поезд 
+Whose?	Чей ?
+Unite 8 In my room! В моей комнате!	
+Armchair	Кресло 
+Computer	Компьютер 
+Desk	Парта, письменный стол
+Playroom	Игровая комната
+TV	телезитор
+in	в
+on	на
+under	под
+between	между
+Next to	рядом
+In front of	впереди
+behind	позади
+above	над
+Module 5 Unit 9 Cows are funny! Забавные коровы!	
+Body	Тело, туловище
+Cow	Корова 
+Fat	Толстый, тучный
+Feet	Ступни 
+Foot	Ступня 
+Get on the train 	Сесть в поезд 
+Head	Голова 
+Leg	Нога 
+Long	Длинный 
+Man	Мужчина 
+Men	Мужчины (мн. число)
+Mice	Мыши 
+Mouse 	Мышь 
+Mouth	Рот 
+Sheep	Овца 
+Short	Короткий 
+Tail	Хвост 
+Teeth	Зубы 
+Thin	Тонкий, худой
+Tooth	Зуб 
+Track	Путь (железнодорожный)
+Woman	Женщина 
+Women 	Женщины (мн. число)
+Unite 10 clever animals. умные животные	
+Crawl	Ползать 
+Parrot	Попугай 
+Rabbit	Кролик 
+Seahorse	Морской конек 
+Spider	Паук 
+Talk	Разговаривать 
+Tortoise 	Черепаха 
+Walk 	Гулять, ходить
+Module 6 Unite 11 Grandma! Grandpa!	
+Behind	Позади 
+Bloom	Цвести 
+Car	Автомобиль 
+In front of	перед
+Next to	Рядом 
+Present 	Подарок 
+Room 	Комната 
+Unite 12 My House! Мой дом!	
+Cooker	Кухонная плита
+Cupboard	Шкаф с полками
+Everywhere 	Повсюду, везде
+Fridge 	холодильник
+How many…?	Как много? Сколько?
+Mirror 	Зеркало 
+Sofa 	Диван 
+Module 7 Unite 13 we’re having a grate time! 	
+Day off	Выходной день
+Drive 	Водить машину
+Face 	лицо
+Make a sandcastle 	Строить замок из песка
+Over there 	там
+Paint a picture	Рисовать картину
+Piano 	пианино
+Upside down	Вверх ногами
+Watch TV	Смотреть телевизор
+Unite 14 in the Park!	
+Basketball 	баскетбол
+Bell 	колокольчик
+Fabulous 	потрясающий
+Fly a kite 	Запускать воздушного змея
+Hot dog 	Сосиска в тесте
+Laugh 	Смех, смеяться 
+Mac 	Резиновый плащ
+Park 	парк
+Race 	гонка
+Ride a bike	Кататься на велосипеде
+Ring 	Звенеть, кольцо
+Sleep 	спать
+Soccer 	футбол
+Unite 15 a fun day!	
+Cartoon 	мультфильм
+Clock 	часы
+Hand 	Рука, часовая стрелка
+Join 	присоединяться
+Monday	понедельник
+Quiz 	викторина
+day	День недели
+Monday 	понедельник
+Tuesday	вторник
+Wednesday	среда
+Thursday	четверг
+Friday	пятница
+Saturday	суббота
+Sunday	воскресенье
+Unite 16 On Sundays!	
+Afternoon 	После обеда
+Evening 	вечер
+Go to bed 	Ложиться спать
+Have a shower 	Принимать душ
+Have a breakfast 	завтракать
+Have lunch 	обедать
+Have supper 	ужинать
+Listen to music 	Слушать музыку
+Morning 	утро
+Night 	ночь
+Relative 	родственник
+Visit 	Навещать, посещать
+Fun at school	
+Add 	добавлять
+Because 	Потому  что
+Belong to	Относиться, принадлежать
+Child 	ребенок
+Circle 	круг
+Crocodile 	крокодил
+Design 	Дизайн, придумывать, конструировать
+Fairy tale	сказка
+Figure out	Вычислять, выяснять что либо
+Find out	Найти ответ
+Hear 	слышать
+Fun at school 2	
+In the street	На улице
+Know 	знать
+Lizard 	ящерица
+Mammal 	млекопитающее
+Map 	карта
+Midnight 	полночь
+Noon 	полдень
+Painting 	картина
+Reptile 	рептилия
+Scene 	эпизод
+Fun at school 3	
+Set a clock 	Устанавливать часы
+Snake 	змея
+Square 	квадрат
+Name 	имя
+Surname 	фамилия
+Take away	вычитать
+Title 	название
+Triangle 	треугольник
+Whale 	кит
+The toy soldier 	
+Arm	рука
+By himself	один
+cheer	Подбадривать, аплодировать, приветствовать
+Dance on the toes 	Танцевать на носочках
+End 	конец
+Follow 	Следовать за кем то
+Follow me	Иди со мной
+How do you do?	Как у тебя дела
+Look out 	выглядывать
+March 	маршировать
+Poor 	бедный
+Put 	ставить
+Shout 	кричать
+Sky 	небо
+Arthur and Rascal	
+Alright 	Хорошо, в порядке, все равно
+Be careful	Будь осторожен
+Catch 	ловить
+Drop 	бросать
+Go home 	Идти домой
+Help 	Помощь, помогать
+Naughty 	непослушный
+Next door	По соседству
+Picnic 	пикник
+Prize 	приз
+Quick 	быстрый
+Silly 	Простой, глупый
+Winner 	победитель
+Merry Christmas, everybody! Mother’s Day	
+Bring 	приносить
+Christmas carol 	Рождественская песня
+Christmas pudding 	Рождественский пудинг
+Christmas tree 	Рождественская ёлка
+Mince pie 	Пирожок с мясом
+Next year 	Следующий год
+Smell 	Чувствовать запах, нюхать
+Turkey 	индейка
+Wish 	желать
+Come to mind	Приходить на ум
+smile	улыбка
+Schools in the UK! A bite to eat!	
+Age 	возраст
+Nursery school	Детский сад
+Primary school	Начальная школа
+spend	проводить
+start	Начинать (ся)
+uniform	форма
+live	жить
+life	жизнь
+breakfast 	завтрак
+teatime	Время чаепития
+Tesco superstore! Animal down under!	
+Electrical item	электроприбор
+Everything 	всё
+Everybody 	каждый
+furniture	мебель
+game	игра
+sell	продавать
+seller	продовец
+sportswear	Спортивная одежда
+superstore	супермаркет
+farm	ферма
+fast	быстрый
+insect	насекомое
+interesting	Интересный 
+neck	шэя
+Castle 	Замок, дворец
+cottage	коттедж
+Full off	Полный чего либо 
+Get ready, get set, go!	
+Easy 	лёгкий
+finish	Заканчивать, финиш
+Runner 	бегун
+Sack race	Гонка в мешках
+spoon	ложка
+Take part	Принимать участие 
+Three-legged	Трёх-ногий
+Tie 	Узел, галстук, связывать, вязать узлом
+owner	Владелец, хозяин
+sail	Плавать под парусом
+sailor	моряк
+spinach	Шпинат (огородный овощ)
+Spotlight on Russia!	
+1. Primary Schools in Russia	
+At work	На работе
+break	перемена
+canteen	столовая
+gym	Спортивный зал
+Handicraft	Труд (название предмета)
+lesson	урок
+library	библиотека
+Nature Study	природоведение
+Parent 	родитель
+Parents 	родители
+Reading 	чтение
+Relax 	отдыхать
+stay	оставаться
+2. Families in Russia	
+aunt	тётя
+cousin	Двоюродный брат, сестра
+uncle	дядя
+For short	Кратко, сокращённо 
+cafe	кафэ
+coffee	кофэ
+festival	фестиваль
+flavour	вкус
+outside	На улице
+scream	Кричать, визжать
+vanilla	ванильный
+grandparent	Дедушка и бабушка
+granddaughter	внучка
+grandson	внук
+grandchildren	внуки
+son	сын
+3. Grandpa Durov’s Wonderland	
+Actor 	актёр
+bear	медведь
+camel	верблюд
+hippo	бегемот
+pigeon	голубь
+pony	пони
+theatre	театр
+trick	Трюк
+unusual	необычный
+4. House museums in Russia	
+Artist 	артист
+composer	композитор
+famous	знаменитый
+museum	музей
+past	Прошедший, прошлое
+Poet 	поэт
+Such as	Такой как
+writer	писатель
+5. Fun after school	
+costume	костюм
+Drama class	Театральный кружок
+judo	дзюдо
+karate	каратэ
+Martial arts	Боевые искусства
+Put on a play	Ставить пьесу
+bright	Яркий
+hare	зайц
+Classroom English	
+Are you ready?	Вы готовы
+Change seats	Поменяться местами, пересеть
+Clap your hands	Хлопать в ладоши
+Get ready	подготовьтесь
+Pick a card	Выберите карточку
+Present it to the class	Представьте это классу 
+Show your photos to the class	Покажите свои фотографии классу
+Stamp your feet	Потопайте ногами
+Try again	Попробуйте еще раз
+Well done!	хорошо
+What’s the matter?	Что случилось
+What’s wrong?	Что случилось
+Work in pairs	Работайте в парах 
+Цвета 	
+Слово	Перевод
+Colours	цвета
+yellow	желтый
+black 	чёрный
+white	белый
+blue	голубой
+red	красный
+grey	серый
+orange	оранжевый
+pink	розовый
+brown	коричневый
+green	зелёный
+Числа 	
+Numbers from 1 to 10	числа от 1 до 10
+one	1
+two	2
+three	3
+four	4
+five	5
+six	6
+seven	7
+Ei ght	8
+nine	9
+ten	10
+Numbers from 11 to 20	Числа от 11 до 20
+eleven	11
+twelve	12
+thirteen	13
+fourteen	14
+fifteen	15
+sixteen	16
+seventeen	17
+eighteen	18
+nineteen 	19
+twenty	20
+Round numbers	круглые числа
+ten	десять
+twenty	двадцать
+thirty	тридцать
+forty	сорок
+fifty	пятьдесят
+sixty	шестьдесят
+seventy	семьдесят
+eighty	восемьдесят
+ninety	девяносто
+one hundred	сто
+
