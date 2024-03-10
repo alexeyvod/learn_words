@@ -110,109 +110,115 @@ class _MyHomePageState extends State<HomePage> {
                   ),
                 ),
                 SizedBox(height: 5,),
-                Consumer<Model>(
-                  builder: (context, model, child) {
-                    return Column(
-                      children: [
-                        !model.isShow ? Container(): FadeInDown(
-                          child: Text(
-                              "${model.Primer}",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(color: Colors.indigo,
-                                  fontSize: context.watch<Model>().fontSize + 8,
-                                  fontWeight: FontWeight.bold)
+                Expanded(
+                  child: Consumer<Model>(
+                    builder: (context, model, child) {
+                      return Column(
+                        children: [
+                          !model.isShow ? Container(): FadeInDown(
+                            child: Text(
+                                "${model.Primer}",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(color: Colors.indigo,
+                                    fontSize: context.watch<Model>().fontSize + 8,
+                                    fontWeight: FontWeight.bold)
+                            ),
                           ),
-                        ),
-                        SizedBox(height: 5,),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Text(context.watch<Model>().sLessonCaption.toString(),
-                                style: new TextStyle(fontSize: context.watch<Model>().fontSize - 4)),
-                            IconButton(
-                              iconSize: 40,
-                              icon: const Icon(Icons.help_outline, color: Colors.indigo),
-                              onPressed: () {
-                                Provider.of<Model>(context, listen: false).getHelp();
-                              },
-                            ),
-                          ],
-                        ),
-                        SizedBox(height: 1,),
-                        Provider.of<Model>(context, listen: false).GameOver ? Container() :
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            !model.isShow ? Container(): FadeInLeft(
-                                duration: Duration(milliseconds: 200),
-                                child: ButtonAnswer(value: model.sAnswers[0])),
-                            !model.isShow ? Container(): FadeInRight(
-                                duration: Duration(milliseconds: 200),
-                                child: ButtonAnswer(value: model.sAnswers[1])),
-                            !model.isShow ? Container(): FadeInLeft(
-                                duration: Duration(milliseconds: 200),
-                                child: ButtonAnswer(value: model.sAnswers[2])),
-                            !model.isShow ? Container(): FadeInUp(
-                                duration: Duration(milliseconds: 200),
-                                child: ButtonAnswer(value: model.sAnswers[3])),
-                          ],
-                        ),
-                        !Provider.of<Model>(context, listen: false).GameOver ? Container() :
-                        Column(
-                          children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                FadeInLeft(child: Image.asset("assets/heart.png", width: 100, height: 100, fit: BoxFit.contain)),
-                                FadeInRight(
-                                  child: Consumer<Model>(
-                                    builder: (context, model, child) {
-                                      return Text(
-                                          "${model.hearts}",
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(color: Colors.red,
-                                              fontSize: 70,
-                                              fontWeight: FontWeight.bold)
-                                      );
-                                    },
-                                  ),
-                                )
-                              ],
-                            ),
-                            SizedBox(height: 40,),
-                            FadeInUp(
-                              delay: const Duration(seconds: 1),
-                              child: Center(
-                                child: SizedBox(
-                                    width: 160,
-                                    height: 40,
-                                    child: ElevatedButton(
-                                      onPressed: () {
-                                        Provider.of<Model>(context, listen: false).reStart();
-                                      },
-                                      child:
-                                      Text("Начать заново",
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(color: Colors.white,
-                                              fontSize: context.watch<Model>().fontSize + 2,
-                                              fontWeight: FontWeight.bold)
-                                      ),
-                                    )
-                                ),
+                          SizedBox(height: 5,),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Text(context.watch<Model>().sLessonCaption.toString(),
+                                  style: new TextStyle(fontSize: context.watch<Model>().fontSize - 4)),
+                              IconButton(
+                                iconSize: 40,
+                                icon: const Icon(Icons.help_outline, color: Colors.indigo),
+                                onPressed: () {
+                                  Provider.of<Model>(context, listen: false).getHelp();
+                                },
                               ),
-                            )
-                          ],
-                        )
-
-                      ],
-                    );
-                  },
+                            ],
+                          ),
+                          SizedBox(height: 1,),
+                          Provider.of<Model>(context, listen: false).GameOver ? Container() :
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              !model.isShow ? Container(): FadeInLeft(
+                                  duration: Duration(milliseconds: 200),
+                                  child: ButtonAnswer(value: model.sAnswers[0])),
+                              !model.isShow ? Container(): FadeInRight(
+                                  duration: Duration(milliseconds: 200),
+                                  child: ButtonAnswer(value: model.sAnswers[1])),
+                              !model.isShow ? Container(): FadeInLeft(
+                                  duration: Duration(milliseconds: 200),
+                                  child: ButtonAnswer(value: model.sAnswers[2])),
+                              !model.isShow ? Container(): FadeInUp(
+                                  duration: Duration(milliseconds: 200),
+                                  child: ButtonAnswer(value: model.sAnswers[3])),
+                            ],
+                          ),
+                          !Provider.of<Model>(context, listen: false).GameOver ? Container() :
+                          Column(
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  FadeInLeft(child: Image.asset("assets/heart.png", width: 100, height: 100, fit: BoxFit.contain)),
+                                  FadeInRight(
+                                    child: Consumer<Model>(
+                                      builder: (context, model, child) {
+                                        return Text(
+                                            "${model.hearts}",
+                                            textAlign: TextAlign.center,
+                                            style: TextStyle(color: Colors.red,
+                                                fontSize: 70,
+                                                fontWeight: FontWeight.bold)
+                                        );
+                                      },
+                                    ),
+                                  )
+                                ],
+                              ),
+                              SizedBox(height: 40,),
+                              FadeInUp(
+                                delay: const Duration(seconds: 1),
+                                child: Center(
+                                  child: SizedBox(
+                                      width: 160,
+                                      height: 40,
+                                      child: ElevatedButton(
+                                        onPressed: () {
+                                          Provider.of<Model>(context, listen: false).reStart();
+                                        },
+                                        child:
+                                        Text("Начать заново",
+                                            textAlign: TextAlign.center,
+                                            style: TextStyle(color: Colors.white,
+                                                fontSize: context.watch<Model>().fontSize + 2,
+                                                fontWeight: FontWeight.bold)
+                                        ),
+                                      )
+                                  ),
+                                ),
+                              )
+                            ],
+                          )
+                  
+                        ],
+                      );
+                    },
+                  ),
                 ),
-
-
+                Text("Водопьянов Алексей, 2024",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(color: Colors.black38,
+                        fontSize: 8,
+                        fontWeight: FontWeight.normal)
+                ),
               ],
             ),
           ),
