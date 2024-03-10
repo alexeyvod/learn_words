@@ -50,10 +50,12 @@ class _MyHomePageState extends State<HomePage> {
     }
   }
 
+  /*
   Future<LottieComposition> _loadComposition() async {
     var assetData = await rootBundle.load('assets/0.json');
     return await LottieComposition.fromByteData(assetData);
   }
+   */
 
   @override
   Widget build(BuildContext context) {
