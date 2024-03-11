@@ -172,6 +172,7 @@ class _SelectLessonState extends State<SelectLesson> {
     prefs.setInt('LessonID', LessonID);
     String LessonCaption = LessonsList[LessonID]['Caption'];
     prefs.setString('LessonCaption', LessonCaption);
+    prefs.setInt('AllHearts', 0);
     while(Navigator.of(mContext).canPop()){
       Navigator.of(mContext).pop(false);
     }
