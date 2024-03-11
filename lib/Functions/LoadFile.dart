@@ -31,15 +31,18 @@ class LoadFile{
       String LessonCaption = '';
       for(String line in lines){
         List<String> cols = line.split('\t');
-        if(cols.length == 1 || (cols.length > 1 && cols[1].length == 0) ){
-          LessonCaption = cols[0];
-          if(Words.length > 0){
-            Lessons[LessonCaption] = Words;
+        if(cols.length == 1 || (cols.length > 1 && cols[1].trim().length == 0) ){
+          if(cols[0].trim().length > 0){
+            LessonCaption = cols[0].trim();
+            if(Words.length > 0){
+              Lessons[LessonCaption] = Words;
+            }
+            Words = new Map<String, String>();
           }
-          Words = new Map<String, String>();
         }
         if(cols.length > 1 && cols[1].length > 0){
-          Words[cols[0]] = cols[1];
+          Words[cols[0].trim()] = cols[1].trim();
+          //print(cols[0].trim());
         }
       }
       Lessons[LessonCaption] = Words;

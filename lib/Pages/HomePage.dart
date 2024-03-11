@@ -5,6 +5,7 @@ import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import 'package:animate_do/animate_do.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 import '../Functions/DBProvider.dart';
 import '../Models/Model.dart';
 import '../Functions/LoadFile.dart';
@@ -28,6 +29,8 @@ class _MyHomePageState extends State<HomePage> {
   late BuildContext mContext;
   late SharedPreferences prefs;
   String Title = "";
+  String version = '';
+  String buildNumber = 'packageInfo.buildNumber';
 
 
   @override
@@ -37,6 +40,9 @@ class _MyHomePageState extends State<HomePage> {
   }
 
   void Start() async{
+    PackageInfo packageInfo = await PackageInfo.fromPlatform();
+    version = packageInfo.version;
+    buildNumber = packageInfo.buildNumber;
     List<Map> tmp = await DBProvider.db.getAll();
     if(tmp.length == 0) {
       await DBProvider.db.initDB();
@@ -218,12 +224,24 @@ class _MyHomePageState extends State<HomePage> {
                     },
                   ),
                 ),
-                Text("Водопьянов Алексей, 2024",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.black38,
-                        fontSize: 8,
-                        fontWeight: FontWeight.normal)
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Text("Водопьянов Алексей, 2024",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.black38,
+                            fontSize: 8,
+                            fontWeight: FontWeight.normal)
+                    ),
+                    Text("Версия $version",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.black38,
+                            fontSize: 8,
+                            fontWeight: FontWeight.normal)
+                    ),
+                  ],
                 ),
+
               ],
             ),
           ),
