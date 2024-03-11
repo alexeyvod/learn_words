@@ -125,11 +125,6 @@ class Model extends ChangeNotifier {
       prefs.setString('lastDate', lastDate);
     }
 
-    List<Map> tmp = await DBProvider.db.getAll();
-    if(tmp.length == 0) {
-      //await DBProvider.db.initDB();
-    }
-
     Map<String, dynamic> Question = await DBProvider.db.getQuestionMaxRating();
     sLessonId  = Question['LessonId'];
     sQuestionId = Question['id'];
@@ -193,7 +188,7 @@ class Model extends ChangeNotifier {
       }
       print("Рейтинг: ${ishRating} -> ${Rating}");
       await DBProvider.db.setRating(sQuestionId, Rating);
-      hearts += 1;
+      //hearts += 1;
       Timer(Duration(milliseconds: 900), () {
         CurrentLottie = compositions[currentEmoji]!;
         LottieRepeat = true;
@@ -211,7 +206,7 @@ class Model extends ChangeNotifier {
     if(answer != sRightAnswer){
       Rating += penaltyWrong;
       currentEmoji--;
-      hearts += 3;
+      hearts -= 15;
       Timer(Duration(milliseconds: 900), () {
         CurrentLottie = compositions[currentEmoji]!;
         LottieRepeat = true;

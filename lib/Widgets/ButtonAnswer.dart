@@ -21,12 +21,15 @@ class ButtonAnswer extends StatelessWidget {
   Widget build(BuildContext context) {
     helping = context.watch<Model>().Help;
     fsize = context.watch<Model>().fontSize + 2;
+    Color bgColor = Theme.of(context).colorScheme.surface;
     if(helping && value == context.watch<Model>().sRightAnswer ){
       fsize = 16;
       isBold = FontWeight.bold;
+      bgColor = Colors.tealAccent;
     }
     return Card(
         elevation: 5,
+        color: bgColor,
         child: InkWell(
           onTap: () {
             Provider.of<Model>(context, listen: false).answer(value);
