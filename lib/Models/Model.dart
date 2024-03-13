@@ -152,7 +152,7 @@ class Model extends ChangeNotifier {
   void Speak(String word) async {
     if(isSpeak){
       Directory documentsDirectory = await getApplicationDocumentsDirectory();
-      String mp3FileName = join(documentsDirectory.path, 'words_mp3', word.toString().trim().replaceAll("?", "").replaceAll("!", "").replaceAll("/", "_").replaceAll("\\", "_") + ".mp3");
+      String mp3FileName = join(documentsDirectory.path, 'words_mp3', word.toString().trim().replaceAll("?", "").replaceAll("*", "").replaceAll("!", "").replaceAll("/", "_").replaceAll(" ", "_").replaceAll("\\", "_") + ".mp3");
       File mp3File =File(mp3FileName);
       print(mp3FileName);
       try{
