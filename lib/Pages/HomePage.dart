@@ -224,7 +224,7 @@ class _MyHomePageState extends State<HomePage> {
                     },
                   ),
                 ),
-                Row( 
+                Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Text("Водопьянов Алексей, 2024...",
