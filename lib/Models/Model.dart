@@ -94,7 +94,7 @@ class Model extends ChangeNotifier {
       //print(timer.tick);
       hearts--;
       notifyListeners();
-      if (hearts == 0) {
+      if (hearts < 1) {
         print('Cancel timer');
         GameOver = true;
         hearts = 0;
@@ -229,7 +229,9 @@ class Model extends ChangeNotifier {
         Primer = "Маловато";
       }
       timer1.cancel();
+      if(hearts < 0) hearts = 0;
       AllHearts += hearts;
+      if(AllHearts < 0) AllHearts = 0;
       prefs.setInt('AllHearts', AllHearts);
       notifyListeners();
       return;
